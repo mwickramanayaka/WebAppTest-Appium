@@ -37,11 +37,12 @@ public class BaseClass {
 			//caps.setCapability(CapabilityType.VERSION, "9");
 			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
 
-			caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+			caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 2000);
 
 			//APK path
 			//caps.setCapability(MobileCapabilityType.APP, "");
 
+			//appium --allow-insecure chromedriver_autodownload
 			caps.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
 
 			URL url = new URL("http:/127.0.0.1:4723/wd/hub");
