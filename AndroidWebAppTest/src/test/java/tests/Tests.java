@@ -12,6 +12,7 @@ public class Tests extends BaseClass {
 	
 	@Test
 	public void test1() throws InterruptedException {
+		
 		driver.get("https://www.ebay.com");
 		
 		String actualTitle = driver.getTitle();
@@ -19,9 +20,11 @@ public class Tests extends BaseClass {
 		System.out.println("Title is correct");
 		Thread.sleep(2000);
 		
-		driver.findElement(By.id("kw")).sendKeys("Mobile");
+		driver.findElement(By.id("gh-ac")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("kw")).sendKeys(Keys.RETURN);	
+		driver.findElement(By.id("gh-ac")).sendKeys("mobiles");
+		Thread.sleep(2000);
+		driver.findElement(By.id("gh-f")).sendKeys(Keys.RETURN);
 		
 	//	driver.findElement(By.name("q")).sendKeys("appium");
 	//	driver.findElement(By.name("q")).sendKeys(Keys.ENTER);

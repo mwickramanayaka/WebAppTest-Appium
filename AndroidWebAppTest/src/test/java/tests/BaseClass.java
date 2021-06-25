@@ -28,7 +28,7 @@ public class BaseClass {
 
 			DesiredCapabilities caps = new DesiredCapabilities();
 
-			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
+			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "");
 			caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
 
 			//caps.setCapability("platformName", "ANDROID");
